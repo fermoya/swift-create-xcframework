@@ -93,7 +93,7 @@ async function installUsingMintIfRequired (command, package) {
         core.info(command + " is already installed")
 
     } else {
-        core.info("Installing " + package)
+        core.info("Installing " + package + " " + scxVersion)
         await exec.exec('mint', [ 'install', 'fermoya/swift-create-xcframework@' + scxVersion ])
     }
 }

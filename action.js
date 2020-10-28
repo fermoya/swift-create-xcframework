@@ -21,7 +21,7 @@ async function run () {
         await installUsingBrewIfRequired("mint")
 
         // install ourselves if not installed
-        await installUsingMintIfRequired('swift-create-xcframework', 'unsignedapps/swift-create-xcframework')
+        await installUsingMintIfRequired('swift-create-xcframework', 'fermoya/swift-create-xcframework')
 
         // put together our options
         var options = [ '--zip', '--github-action' ]
